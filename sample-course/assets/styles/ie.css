@@ -1,0 +1,11 @@
+.img-wrapper img {
+	margin-bottom: 8px;
+}
+/* == Column Styles */
+/*IE can't do dashed borders, so I make them solid here. The other styles are coming from global.*/
+.colContainer {
+	border-top: solid;
+}
+.col {
+	border-left: solid;
+}

@@ -1,0 +1,16 @@
+/** = Standards-based stretchable rounded corner boxes. Add a mun colour by using the class colour names. */
+.box, .forum {
+	background-image:url(cssImg/rc_bgWhite.gif);
+}
+.box-outer{
+	background-image: url(cssImg/rc_bgWhite.gif);
+}
+.box-inner{
+	background-image: url(cssImg/rc_bgWhite.gif);
+}
+.box h2 {
+	background-image: url(cssImg/rc_bgWhite.gif);
+}
+.img-wrapper img {
+	margin-bottom: 8px;
+}

@@ -1,0 +1,68 @@
+/*
+Simple Gallery
+Taliesin Smith
+Jan 14, 2011
+*/
+
+
+/* == Styles for the gallery */
+#galleryContainer {
+ width: 99%;
+ margin: 0;
+ padding: 0;
+}
+.gallery {
+	width: 100%;
+	margin: 0;
+	padding: 0 2% 2% 0;
+	overflow: auto;
+}	
+.gallery li {
+	margin: 2% 0 0 2%;
+	padding: 0 0 3% 0;
+	display: inline;
+	float: left;
+	text-align: center;
+    list-style: none;
+    background-image: none;
+    width: 200px; /*change to %width and assign the max-width if you want shrinking/stretching effect*/
+	/*max-width: 200px; */
+}
+.gallery img {
+	width: 177px;
+	margin: 0;
+	padding: 0;
+}
+.gallery img {
+	border: 1px solid #a0a3a6;
+}
+/*.gallery a {
+	display: block;
+	width: 100%;
+	max-width: 200px;
+	margin: 0;
+	padding: 0;
+}
+.gallery a img {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.gallery a img {
+	border: none;
+	border: 1px solid #a0a3a6;
+}
+.gallery a,
+.gallery a:link  {
+	border: 3px solid #a0a3a6;
+}
+.gallery a:hover,
+.gallery a:focus,
+.gallery a:active {
+	border: 3px solid #830b2e;
+	text-decoration: none;
+}*/
+.caption {
+	margin: 0;
+	padding:0 0 2% 0;
+}

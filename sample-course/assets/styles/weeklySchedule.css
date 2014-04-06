@@ -1,0 +1,60 @@
+/*
+The Weekly Schedule Table
+Created by: Taliesin Smith for Course Development and Maintenance
+
+Last changed: February 2011
+Last validated: February 2011
+*/
+
+/*An alternative layout for the schedule table*/
+
+#weeklySchedule thead th,
+#weeklySchedule thead td {
+	text-align: center;
+}
+#weeklySchedule thead .start th,
+#weeklySchedule thead .start td,
+#weeklySchedule tfoot .end th,
+#weeklySchedule tfoot .end td,
+#weeklySchedule td.date {
+	color: #231f20; /*mun black*/
+	font-weight: bold;
+	font-style: normal;
+	text-align: center;
+	background-color: #eeeeee;
+}
+#weeklySchedule tbody th,
+#weeklySchedule tfoot .end th,
+#weeklySchedule tfoot .end td {
+	color: #fff;
+	background-color: #2f5b75;
+}
+thead #moduleCol, thead #activityCol  {
+	width: 40%;
+}
+thead #dateCol{
+	width: 20%;
+}
+#weeklySchedule tbody td {
+	padding: 1em;
+}
+/*removes alt striping*/
+#weeklySchedule tbody td.alt,
+#weeklySchedule tbody td {
+	background-color: #f8f8f8;
+}
+/*Removes spacing around of p-tags in the th-tags*/
+#weeklyShchedule th p {
+	padding: 0;
+	margin: 0;
+}
+
+#weeklySchedule tbody th {
+	padding: 0.75em;
+	text-align: center;
+	vertical-align: middle;
+	background-color:#7399b1;
+}
+#weeklySchedule td.date {
+	vertical-align: middle;
+}

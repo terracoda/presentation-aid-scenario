@@ -1,0 +1,328 @@
+/*
+Course Default Print Style Sheet
+Taliesin Smith
+Last Updated - October 10, 2012
+Last validated - October 10, 2012
+Last uploaded to DMS - October 10, 2012
+Last uploaded to LMS - October 10, 2012
+
+*/
+/*Nothing should float. Floated elements cause a pringting error in some versions of Firefox.*/
+
+body * {
+	float:none;
+}
+/*Stuff for the Guide page only*/
+#guideMenu {
+	display: none;
+}
+h2.divider{
+	margin: 20pt 0;
+	padding: 5pt 0;
+	text-align: center;
+	border-top: 1pt solid #999;
+	border-bottom: 1pt solid #999;
+	text-transform: uppercase;
+}
+code, tt {
+	border-bottom: 1pt solid #dcd7d6;
+}
+/*Stuff that shouldn't print */
+div.courseTitle,
+div.copyright,
+.backToTop,
+.pipeLine,
+hr,
+.menu *,
+.pipeLine *{
+	display: none;
+}
+
+/* Stuff that should print */
+html, body {
+	border:0;
+	margin:0;
+	padding:0;
+}
+html, body {
+	width: 8.5in;
+	height: 11in;
+}
+body {
+	background-color: #fff;
+	color: #000;
+	/*font-family: Garamond, Georgia, "Times New Roman", times, serif;*/
+	font-family: arial, helvetica, "trebuchet ms", verdana, sans-serif;
+	font-size: 12pt;
+	line-height: 14pt;
+}
+.content {
+	width: 8in;
+	margin: 0.05in 0.25in;
+	padding: 0 0 0 0;
+}
+.col,
+.box,
+.box-inner,
+.box-outer,
+.box h2,
+a {
+	padding: 0;
+	float: none;
+	background-image: none;
+}
+.content a:link:after, .content a:visited:after {
+   content: " (" attr(href) ") ";
+   font-size: 80%;
+   }
+img {
+	display: block;
+	margin: 20pt auto;
+	padding: 4pt;
+	border: 1px solid #eee;
+}
+.img-wrapper img {
+	margin: 0 auto;
+}
+.img-wrapper,
+.img-wrapperWithCaption {
+	margin: 10pt auto 20pt;
+	text-align: center;
+}
+.caption,
+.creditLine,
+.img-withCaption dd {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-style: italic;
+	text-align: center;
+}
+.img-withCaption dd,
+.img-wrapperWithCaption {
+	border-bottom: 1pt solid #000;
+	padding-bottom: 5pt;
+	margin-bottom: 20pt;
+} 
+.col {
+	width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 20pt 0 5pt 0;
+}
+h1 {
+	font-size: 10pt;
+	line-height: 12pt;
+	margin: 10pt 0 10pt 0;
+	padding: 5pt 0;
+	text-align: center;
+	border-top: 1pt solid #999;
+	border-bottom: 1pt solid #999;
+	text-transform: uppercase;
+}
+h1 small,
+h1 span,
+h1 a {
+	display: none;
+	/*display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #999;*/
+}
+h2, h3 {
+	font-size: 16pt;
+	line-height: 17pt;
+}
+h3 {
+	font-style: italic;
+}
+h4 {
+	font-size: 14pt;
+	line-height: 15pt;
+}
+h5, h6 {
+	font-size: 12pt;
+	line-height: 14pt;
+}
+h1, h2 {
+	margin: 5pt 0 10pt 0;
+}
+h3, h4, h5, h6 {
+	margin: 20pt 0 5pt 0;
+	padding: 0;
+}
+p {
+	margin: 0 0 10pt 0;
+}
+q, blockquotes {
+	quotes: none;
+}
+blockquote {
+	width: 6in;
+	margin: 10pt 20pt 20pt 40pt;
+}
+blockquote cite {
+	display: block;
+	text-align: right;
+}
+blockquote p.quoteRef {
+	margin: 5pt 5pt 5pt 5pt;
+	text-align: right;
+}
+blockquote p.quoteRef cite {
+	display: inline;
+}
+/*Printing the cite attribute when it is is used. Commented out because nobody uses the citation attribute.*/
+/*.content blockquote:after, .content q:after {
+   content: " (" attr(cite) ") ";
+   font-size: 80%;
+   }*/
+
+/*Default print margin and padding for all lists*/
+ul, ol, dl {
+	margin: 0 0 20pt 0;
+	padding: 0 20pt;
+}
+li ul, li ol, li dl {
+	margin-top: 5pt;
+	margin-bottom: 0;
+}
+ul li, ol li {
+	margin: 0 0 5pt 0;
+	padding: 0;
+}
+li li {
+	margin: 0 0 5pt 0;
+	padding: 0;
+}
+ul {
+	list-style-type: disc;
+}
+ul ul {
+	list-style-type: circle;
+}
+ul ul ul {
+	list-style-type: square;
+}
+ul ul ul ul{
+	list-style-type: circle;
+}
+ul ul ul ul ul{
+	list-style-type: square;
+}
+ul li {
+	background-image: none;
+}
+/* Classes for order lists - hml attributes are deprecated */
+/*Nested ordered lists*/
+ol {
+	list-style-type:decimal;
+}
+ol ol{
+	list-style-type:lower-alpha;
+}
+ol ol ol{
+	list-style-type:lower-roman;
+}
+ol.a {
+	list-style-type:lower-alpha;
+}
+ol.A {
+	list-style-type:upper-alpha;
+}
+ol.I {
+	list-style-type:upper-roman;
+}
+ol.i {
+	list-style-type:lower-roman;
+}
+.menu,
+.menu li,
+.menu a {
+	background-image: none;
+	list-style-type: none;
+}
+ul.customCount,
+ol.customCount {
+	list-style-type: none;
+	list-style-image: none;
+}
+ol.nobullet,
+ul.nobullet,
+ul.nobullet ul,
+ol.nobullet ol	{ list-style:none; list-style-image:none; }
+
+ol.nobullet,
+ul.nobullet		{ margin:0; padding-left: 0; }
+
+.nobullet li, 
+.nobullet li li { background: none; padding: inherit;}
+
+dt {
+	font-weight: bold;
+}
+/* == Reference Lists */
+.refList,
+.referenceList {
+ margin-left: 0;
+ padding-left: 0;
+ list-style-type: none;
+
+}
+.referenceList li,
+.refList li{
+	margin: 0 0 10pt 0;
+	padding: 0 0 0 1in;
+	text-indent: -1in;
+	background-image: none;
+}
+
+/*Table widths are fussy. If the table spills off the paper, firefox won't print past the first page.*/
+table, table#weeklySchedule{
+	width: 99%;
+	margin: 0;
+}
+table td,
+table th,
+table#weeklySchedule td,
+table#weeklySchedule th {
+	border: 1pt solid #999;
+}
+th, td,
+table#weeklySchedule th,
+table#weeklySchedule td {
+	padding: 5pt;
+}
+div.hr {
+	clear: both;
+	margin: 20pt 0;
+	border-top: 1pt dashed #999;
+}
+code, tt, pre {
+	font-family: "Andale Mono","Lucida Console","Bitstream Vera Sans Mono","Courier New", monospace;
+	font-size: 10pt;
+}
+pre code {
+	border-bottom: none;
+}
+.note,
+.keynote,
+.iconNote,
+.box,
+thoughtBox{
+	margin: 20pt auto;
+	padding: 10pt;
+	width: 75%;
+	border: 2pt solid #999;
+}
+ul.note li {
+	margin-left: 10pt;
+}
+pre {
+	margin: 20pt 0;
+	padding: 10pt;
+	border-top: 1pt dashed #999;
+	border-bottom: 1pt dashed #999;
+}

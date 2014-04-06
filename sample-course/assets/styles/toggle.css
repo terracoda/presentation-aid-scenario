@@ -1,0 +1,20 @@
+/*Styling for the toggle.js (show/hide) script*/
+
+/*Make the cursor pointer a hand*/
+.toggle a {
+	cursor: pointer;
+	}
+	
+/*The new script handles the the showing and hiding. If using the old scipt now called toggleSibling.js you must uncomment the following css to hide the answers on load.*/
+/*.toggle .answer {
+	display: none;
+	}*/
+	
+/*Styles for the answer box once it is toggled open.*/
+.answer {
+	margin: 1em 0 2em 0;
+	padding: 2em 3em;
+	background-color: #ece9e8; /*lighter version of mun light grey*/
+	font-weight: normal;
+	border: 1px dotted #98012e;
+}

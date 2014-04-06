@@ -1,0 +1,1 @@
+Organize all your supplementary course files like pdfs, powerpoints or word documents in this folder to keep them all in one place and separate from your html content. You may choose to organize them by week or by file type - whatever works for the course.
