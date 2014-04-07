@@ -1,0 +1,116 @@
+/*Course Theme styles for your course go here */
+
+/*
+Course: ed 3650
+AID: Taliesin Smith
+Date: December 2013
+*/
+
+/*Fonts */
+@import "../fonts/font-awesome/less/font-awesome.less";
+
+/* Colors  */
+@white: #fff;
+@black: #231f20;  // MUN black //
+@super_lt_grey: #f8f8f8; // really light, table alt row bg //
+@lt_grey: #ece9e8;  // light grey, bg passes AIM test //
+@med_grey: #9e918d;  // med grey //
+@dark_grey: #65696e;  // MUN dark grey //
+@primary: #2a5f7b;  // MUN dark blue, colour passed AIM as large text, not as small text. Passed AIM test with white text //
+@secondary: #b5bda5;  // green //
+@accent: #91002C;  // MUN red //
+@accent2: #72afb6;  // med blue, column borders //
+@highlight: #ffd500;  // yellow //
+
+/* ==Global over-rides */
+/* Extra Background colors*/
+.grey {
+	background-color: @lt_grey;
+}
+.content {
+	margin-bottom: 3em;
+}
+.videoPlayer {
+	margin: 1em auto;
+	width: 640px; 
+	height: 360px; 
+	max-width: 100%; 
+	max-height: 100%;
+}
+.img-withCaption {
+	margin-right: auto;
+	margin-left: auto;
+}
+/* fixed height list in order to do side-by-side comparison */
+ol.compare {
+	min-width: 10.5em;
+}
+ol.compare li {
+	min-height: 7em;
+	margin: 0;
+	padding: 0;	
+}
+
+/* The note, keynote and iconNote boxes are more subtle in this course */
+.note, .keynote, .iconNote, .rc {
+	width: 80%;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	padding: 1em;
+}
+.iconNote {
+	/*background-color: transparent;*/
+	border-top: 3px double @accent2;
+	border-right: none;
+	border-bottom: 3px double @accent2;
+	border-left: none;
+	min-height: inherit;
+}
+.iconNoteList {
+	min-height: 100px;
+	border-top: 3px double @accent2;
+}
+
+/* New Styles for LWSO 1000 */
+/*Rounded corners rc box.*/
+.rc {
+	/*rounded corners for standards-complient browsers*/
+	-moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+	padding: 1em 2em;
+	margin-bottom: 2em;
+}
+.rcSmall, .noteSmall {
+	width: 40%;
+}
+.rc h4 {
+	border: none;
+}
+
+/*I-tag with class term gets a book icon*/
+.term {
+	.common() {
+		color: @primary;	
+		font-family: 'FontAwesome';
+		}
+	&:before {
+	    margin-right: 0.25em;
+	    .common;
+	    content: "\f02d";
+		}
+	color: @primary;
+	font-style: normal;
+	border-bottom: 1px dotted @accent2;
+}
+
+/*Used above footnoteLists */
+.hrShort {
+	margin: 4em 0 0 0;
+	border-top: 2px solid @primary;
+	padding: 0.5em 0 0 0;	
+	width: 40%;
+}

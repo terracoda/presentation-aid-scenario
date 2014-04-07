@@ -14,8 +14,8 @@ $(document).ready(function() {
     //On load, hide the element "answer" that is inside a "toggle"
     $(".toggle .answer").hide();
     //When the anchor inside a "toggle" is clicked.
-    $(".toggle a").click(function() {
+    $(".toggle button").click(function() {
         //Slide Toggle the parent's sibling which is marked with the class answer. "this" refers to the anchor that is being clicked.
-        $(this).parent().siblings(".answer").slideToggle(600);
+        $(this).siblings(".answer").slideToggle(600);
     });
 });

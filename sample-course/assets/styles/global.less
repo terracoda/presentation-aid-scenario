@@ -7,34 +7,30 @@ Last validated - Dec 4, 2013
 Last uploaded to LMS - Dec 4, 2013
 /*
 Lessification Process:
--- Andrea started the lessification process by creating variables for colours. The colour palette was streamlined and kept very similar to our original. The Colour Palette page has been updated.
+-- Andrea started the lessification process by creating variables for colours. 
+The colour palette was streamlined and kept very similar to our original. The Colour Palette page has been updated.
+-- Steve is working on some re-organization in a different repo
+*/
 
+/*
 Icons:
--- Most of the small iconset is from http://www.famfamfam.com/lab/icons/silk/
+-- Font-awesome is going going to replace the small icons from http://www.famfamfam.com/lab/icons/silk/
 -- There are two delt icon sets (blue and red). They are in the root of the style folder. Copy in the ones you want to use. The names are the same. The sets are not identical, but they are pretty close.
 */
 
-/*To do
-1. Need to look at headings inside block quotes.
-2. Guide needs explanation about formatting in blockquotes.
-3. There's been a request of using symbols instead of colours for nested bullets. Still to discuss/do.
-4. Need to add new boxes and lists to the guide.
+/*
+To do
+ Replace icons with font-awesome.
+ Need to look at headings inside block quotes.
+ Guide needs explanation about formatting in blockquotes.
+ There's been a request of using symbols instead of colours for nested bullets. Still to discuss/do.
+ Need to add new boxes and lists to the guide.
 */
-
-/*Done as Aug 15, 2013
-1. Added Nancy's inlineDetails style for inline lists.
-2. Added new blue icon set and made it the default. Both sets are available in the styles root folder.
-3. Adjusted heading styles.
-4. Increased font size of blockquotes.
-5. Added iconNoteList style.
-6. Fixed the backToTop link (changed from 80% to 90%) to match content width.
-7. Converted the global CSS to LESS! Defined color variables.
     
-Reminder note to use the .munLink icon for links (thanks Stacey), you have to hard code the class on a link, or add it to the linkAutomation script in your course.
-*/
+/*Fonts */
+@import "../fonts/font-awesome/less/font-awesome.less";
 
 /* Colors  */
-
 @white: #fff;
 @black: #231f20;  // MUN black //
 @super_lt_grey: #f8f8f8; // really light, table alt row bg //
@@ -66,7 +62,7 @@ body {
 	color: @black;
 }
 #footer	{
-	margin: 0 0 40px 0;
+	margin: 0 0 20px 0;
 }
 /* == Main Containers */
 /* header, footer, contentContainer, content, and all the little things that go in the header and footer*/
@@ -75,6 +71,7 @@ body {
 #contentContainer {
 	margin-right: 20px;
 	margin-left: 20px;
+	/*background-color: pink;*/
 }
 #header	{
 	margin-top: 5px;
@@ -85,7 +82,7 @@ body {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	/*background-color: yellow;*/	
+	/*background-color: yellow;*/
 }
 #footer	{
 	border-top: thin solid @accent;
@@ -235,8 +232,11 @@ p, address, blockquote {
 	margin: 0.5em 0 1.5em 0;
 	padding: 0;
 }
-/* Browsers render the blockquote consistently, but not the in-line quote. If you want quotes, you'll need to explicitly put them in the markup. However if your content is in a language other than English that may require special punctuation in speech, it might be a good idea to turn on automatic quotes and not inlcude them in the markup. Think about it.
-The multiple reset method here that turns quotes off in most if not all browsers and is taken from http://www.paulchaplin.com/blog/css-reset-and-quirky-quotes */
+/* Browsers render the blockquote consistently, but not the in-line quote. If you want quotes, you'll need to explicitly put them in the markup. 
+However if your content is in a language other than English that may require special punctuation in speech, 
+it might be a good idea to turn on automatic quotes and not inlcude them in the markup.
+The multiple reset method here that turns quotes off in most if not all browsers 
+and is taken from http://www.paulchaplin.com/blog/css-reset-and-quirky-quotes */
 
 blockquote, q {
 	quotes: none;
@@ -260,7 +260,8 @@ blockquote:before, blockquote:after, q:before, q:after {
 	*/
 	content: none;
 }
-/* We currently have 3 styles for a blockquote. The default is a classic clean look, the boxQuote is a bit more styled and then the chunkyQuotes is the the blockquote with the big blue chunky quotes. Use the one that best suits your course.*/
+/* We currently have 3 styles for a blockquote. The default is a classic clean look, the boxQuote is a bit more styled and 
+then the chunkyQuotes is the the blockquote with the big blue chunky quotes. Use the one that best suits your course.*/
 blockquote {
 	margin: 2em auto 3em;
 	padding: 0;
@@ -299,14 +300,13 @@ cite {
 	font-style: italic;
 }
 /*References to blockquotes*/
-/*Used independently a b or cite inside a blockquote will display as block. They must be nested inside the last p of the blockquote to be legal html.*/
-blockquote p b,
-blockquote p cite {
+/*Used independently a b or cite inside a blockquote will display as block. They must be nested inside the last p of the 
+blockquote to be legal html.*/
+blockquote p b {
 	display: block;
 }
 /*All components should look the same individually or bundled.*/
 blockquote p b,
-blockquote p cite,
 /*Use the p.quoteRef to bundle a full reference with multiple components.*/
 blockquote p.quoteRef {
 	margin: 0;
@@ -322,7 +322,8 @@ blockquote p.quoteRef cite, blockquote p.quoteRef b {
 	padding: 0;
 }
 /*References and citations.
- For references to inline quotes, I suggest using a non-semantic inline element like the i-tag, with the class quoteRef to mark the references for your inline quotes.*/
+ For references to inline quotes, I suggest using a non-semantic inline element like the i-tag, with the class quoteRef 
+to mark the references for your inline quotes.*/
 .citation, .quoteRef {
 	color: @med_grey;
 	font-style: italic;
@@ -896,6 +897,15 @@ a.email {background-image: url(cssImg/email_link.png);}
 a.youtube, a.tv {background-image: url(cssImg/television.png);}
 a.munLink {background-image: url(cssImg/munLink.png);}
 
+/*a {
+	padding-left: 0.25em;
+	&:before {
+			color: @accent;	
+			font-family: 'FontAwesome';
+			content: "\f0c1";
+		}
+	}
+*/
 
 /*ereserve links on resources page. You need a parent div with the id #resources or id resources on the body tag*/
 #resources li.ereserve {
@@ -923,25 +933,87 @@ span.eresource a {
 	padding-left: 25px;
 	font-size: 80%;
 }
+
 /** == Contact list */
 ul.contact {
-	margin: 0.5em 0 3em 0;
+	margin: 1em 0;
 	padding: 0;
 }
 .contact li {
-	margin: 0 0 0.5em 0;
-	padding: 0 0 0 1.5em;
+	margin: 0 0 0.5em;
+	padding-left: 1.5em;
+	text-indent: -1.5em;
 	list-style-type: none;
-	background-position: left top;
-	background-repeat: no-repeat;
+	.common() {
+		color: @accent;	
+		font-family: 'FontAwesome';
+	}
+	&.office {
+		background-image: none;
+		&:before {
+			margin-right: 0.5em;
+			.common;
+			content: "\f015";
+		}
+	}
+	&.hours {
+		background-image: none;
+		&:before {
+			margin-right: 0.5em;
+			.common;
+			content: "\f017";
+		}
+	}
+	&.phone {
+		background-image: none;
+		&:before {
+			margin-right: 0.625em;
+			.common;
+			content: "\f095";
+		}
+	}
+	&.email {
+		background-image: none;
+		&:before {
+			margin-right: 0.5em;
+			.common;
+			content: "\f003";
+		}
+	}
+	&.external-email {
+		background-image: none;
+		&:before {
+			margin-right: 0.5em;
+			.common;
+			content: "\f0e0";
+		}	
+	}
+	&.webpage {
+		background-image: none;
+		&:before {
+			margin-right: 0.5em;
+			.common;
+			content: "\f08e";
+		}
+	}
+	&.responseTime {
+		background-image: none;
+		&:before {
+			margin-right: 0.5em;
+			.common;
+			content: "\f112";
+		}
+	}
+	&.fax {
+			background-image: none;
+			&:before {
+				margin-right: 0.5em;
+				.common;
+				content: "\f02f";
+			}
+		}
 }
-.contact li.office {background-image: url(cssImg/house.png);}
-.contact li.hours {background-image: url(cssImg/time.png);}
-.contact li.phone {background-image: url(cssImg/phone.png);}
-.contact li.fax {background-image: url(cssImg/script.png);}
-.contact li.email {background-image: url(cssImg/email.png);}
-.contact li.responseTime {background-image: url(cssImg/hourglass.png);}
-.contact li.webpage {background-image:url(cssImg/world.png);}
+
 
 /** == Menu class */
 /*Puts the icons on the left, removes border and changes hover action.*/
@@ -978,11 +1050,10 @@ sup a:hover, sup a:focus, sup a:active {
 }
 .footNoteList,
 .footnoteList {
-	margin: 5em 0;
-	border: 1px solid @primary;
-	border-top: 3px solid @accent;
-	padding: 0.5em 0 2em 0;	
-	font-size: 90%;
+	margin: 0 0 0 0;
+	border-top: none;
+	padding: 0 0 0 0;	
+	font-size: 80%;
 }
 .foonoteList *,
 .footNoteList * {
@@ -991,7 +1062,7 @@ sup a:hover, sup a:focus, sup a:active {
 .footNoteList li,
 .footnoteList li  {
 	margin: 0;
-	padding: 0.5em 2em 1em;
+	padding: 0.5em 0 1em;
 	background-image: none;
 	/*border-bottom: 1px dashed @accent2;*/
 }
@@ -1001,7 +1072,7 @@ sup a:hover, sup a:focus, sup a:active {
 }
 .footNoteList sup,
 .footnoteList sup {
-	color: @accent2;
+	color: @primary;
 	font-weight: bold;
 	padding-right: 0.5em;
 }
@@ -1037,24 +1108,24 @@ ul.copyrighted {
 /* Stretchable image with caption using a dl or a div */
 dl.img-withCaption,
 div.img-withCaption {
-	margin: 0 auto;
-	padding: 0 20px 20px 0;
+	margin: 0;
+	padding: 0 20px 40px 0;
 	 /* No need to adjust width when the percentage width is used. Create an image the maximum size you want it to appear. A percentage width of some percentage can be used to keep the image to a reasonable size in the viewable content area. It will shrink with the size of the window/screen.*/
-	clear: both;
-	width: 90%; /*Adjust this in the courseTheme if need be.*/
+	/*clear: both;*/
+	width: 50%; /*Adjust this in the courseTheme if need be.*/
 }
 dl.img-withCaption dt,
 dl.img-withCaption dd,
 .img-withCaption img,
 div.img-withCaption {
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	width: 100%;
 	/*max-width: 500px;*//* To prevent images from stretching beyond their real size and pixelating set a max-width here if all your images are the same size, or inline if they are varied in size. Adjust this in the courseTheme if need be.*/
 }
 dl.img-withCaption dd,
 dl.img-withCaption img {	
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 	width: 100%;
 	border: 1px solid @lt_grey;
@@ -1424,14 +1495,14 @@ Or readings other than textbook readings.*/
 .iconNoteList.iconSmall.review {
 	background-image: url(cssImg/delt_reviewArrow_small.png);
 }
-/*Slides for a a presentation perhaps*/
+/*Slides for a presentation perhaps*/
 .slides {
 	background-image: url(cssImg/delt_slides.png);
 }
-.iconNote.iconSmall.review {
+.iconNote.iconSmall.slides {
 	background-image: url(cssImg/delt_slides_small.png);
 }
-.iconNoteList.iconSmall.review {
+.iconNoteList.iconSmall.slides {
 	background-image: url(cssImg/delt_slides_small.png);
 }
 /*Speaker sound icon*/
@@ -1461,9 +1532,6 @@ Or readings other than textbook readings.*/
 }
 .iconNote.iconSmall.takeNote,
 .iconNote.iconSmall.write {
-	background-image: url(cssImg/delt_write_small.png);
-}
-.iconNoteList.iconSmall.sound {
 	background-image: url(cssImg/delt_write_small.png);
 }
 /*Film strip or video camera*/

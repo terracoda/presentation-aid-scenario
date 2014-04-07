@@ -1,3 +1,3 @@
 $(document).ready(function() {
-	$("<div id='footer'><div class='copyright'><p>Course 1000: <em>Course Title</em></p><p>&copy; Content Author &amp; Memorial University of Newfoundland, 2013. All rights reserved.</p></div></div><!-- END footer -->").insertAfter("#contentContainer");
+	$("<div id='footer'><div class='copyright'><p>AID Scenario: <em>Graphic Design</em></p><p>&copy; Ruth Hickey &amp; Memorial University of Newfoundland, 2014. All rights reserved.</p></div></div><!-- END footer -->").insertAfter("#contentContainer");
 });
