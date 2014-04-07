@@ -14,9 +14,20 @@ var termHover = function(terms) {
 			// speech balloon.
 			$(term).qtip({
 				content: $(def).text(),
+				position: { corner: { target: 'leftTop' },
+				 			target: 'mouse',
+							   adjust: { mouse: true }},
 				style: {
-					name: 'green'
-				}
+					  width: 400, 
+				      padding: 5,
+				      textAlign: 'left',
+				      border: {
+				         width: 7,
+				         radius: 5,
+				      },
+					  tip: 'topMiddle',
+				      name: 'green' // Inherit the rest of the attributes from the preset dark style
+				   }
 			});
 		}
 	}
