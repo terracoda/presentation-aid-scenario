@@ -27,7 +27,13 @@ Actions:
 -organize the content so the key points are easily found by skimming. 
 -clearly distinguish between what's content, what's an example and what's an activity.
 
-3. Can this approach be used as a template or model for other modules?: 
+-visual interest and little surprises can be used to engage the learner with the content.
+
+3. Can this approach be used as a template or model for other modules?
+-This particular approach is likely general enought to be applied to future modules. However, I really do not have enough to go on to determine if the design choices made here will be appropriate for the rest of the course.
+-To make more solid design choices and to to be able to identify paterms in the content, I would need more than one module and preferably the syllabus.
+-Without the syllabus it is difficult to determine the how important certain components are or what D2L tools will be used. Being familiar with the syllabus upfront allows me to align my web design choices with istructional design decisions and goals.
+  
 
 Extra
 4. Suggestion for an engaging activity
