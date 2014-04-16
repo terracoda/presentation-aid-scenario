@@ -1,0 +1,76 @@
+/*
+Custom  CSS
+*/
+figcaption {
+	text-align: center;
+}
+small {
+	font-size: 80%;
+}
+.speaker-note {
+	font-size: 1px;
+	text-indent: -10000em;
+}
+
+#what-it-takes li {
+	color: #000;
+	text-align: right; 
+	font-size: 200%;
+	width: 80%;
+	list-style-type: none;
+}
+.steps-all {
+	height: 900px;
+	background: transparent url(../img/graphics/stairs-background-faded.png) no-repeat center center;	
+
+}
+/*#steps-all-comp {
+  background: transparent url(../img/graphics/stairs-background-faded.png) 0 0 no-repeat;
+}*/
+.step {
+	background: transparent no-repeat bottom right;
+	height: 900px;
+	margin: 0 auto;
+}
+.step ol {
+	width: 70%;
+}
+#step0 {
+  background-image: url(../img/graphics/individual-stairs-0.png);
+}
+#step1 {
+  background-image: url(../img/graphics/individual-stairs-1.png);
+}
+#step2 {
+  background-image: url(../img/graphics/individual-stairs-2.png);
+}
+#step3 {
+  background-image: url(../img/graphics/individual-stairs-3.png);
+}
+#step4 {
+  background-image: url(../img/graphics/individual-stairs-4.png);
+}
+#step5 {
+  background-image: url(../img/graphics/individual-stairs-5.png);
+}
+#step6 {
+  background-image: url(../img/graphics/individual-stairs-6.png);
+}
+#step7 {
+  background-image: url(../img/graphics/individual-stairs-7.png);
+}  
+#step8 {
+  background-image: url(../img/graphics/individual-stairs-8.png);
+  height: 450px;
+}
+#step9 {
+  background-image: url(../img/graphics/individual-stairs-9.png);
+   height: 450px;
+}
+
+.panel-left {
+	float: left;
+}
+.panel-right {
+	float: right;
+}
