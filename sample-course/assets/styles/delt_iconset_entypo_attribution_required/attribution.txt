@@ -1,7 +1,0 @@
-Attribution is required when using this Entypo iconset in a course.
-
-Please include the following credit line in the course:
-
-Entypo pictograms by Daniel Bruce. www.entypo.com
-
-The credit line will likely remain static, but be sure to check the Course Style Sheet copyright masterlist prior to its use. It is located in workgroups/courses/course_dev_maintenance/course style sheet.
