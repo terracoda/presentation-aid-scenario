@@ -23,7 +23,7 @@ Layout &amp; Design:
 -organize the content so the key points are easily found by skimming. 
 -clearly distinguish between what's content, what's an example and what's an activity.
 -visual interest and little surprises can be used to engage the learner with the content.
--flexible/liquid alyout for the web.
+-flexible/liquid layout for the web.
 
 -introduction
 -learning objectives
@@ -42,14 +42,14 @@ Layout &amp; Design:
 -ensure all images have appropriate alternative text
 -when adding interactvity, consider fallbacks.
 
-3. Can this approach be used as a template or model for other modules?
+4. Consistency for Subsequent Modules
+-Can this approach be used as a template or model for other modules?
 -This particular approach is likely general enough to be applied to future modules.
-However, I would prefer to have more information and more content to before putting too much effort into customization of layout and images.determine if the design choices made here will be appropriate for the rest of the course.
--To make more solid design choices and to to be able to identify paterms in the content, I would need more than one module and preferably the syllabus.
--Without the syllabus it is difficult to determine the how important certain components are or what D2L tools will be used. Being familiar with the syllabus upfront allows me to align my web design choices with istructional design decisions and goals.
-  
+However, I would prefer to have more information and more content to before putting too much effort into customization of layout and design.
+-To make solid design decisions I need to be able to understand the goals and identify patterns. Ideally more than one module and preferably the syllabus.
+-Being familiar with the syllabus and the content upfront allows me to align my web design choices with istructional design decisions.
 
-4. Course Technology
+5. Course Technology
 -Proper use of the D2L Content menu - Long and Short headings
 -Suggestion for an engaging activity - perhaps compose an email to a classmate and assess an email from a different classmate.
 -Which D2L tool is best chice for this - course mail or discussion forum?
