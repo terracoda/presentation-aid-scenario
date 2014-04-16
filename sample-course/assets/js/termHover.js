@@ -18,15 +18,14 @@ var termHover = function(terms) {
 				 			target: 'mouse',
 							   adjust: { mouse: true }},
 				style: {
-					  width: 400, 
 				      padding: 5,
 				      textAlign: 'left',
 				      border: {
 				         width: 7,
 				         radius: 5,
 				      },
-					  tip: 'topMiddle',
-				      name: 'green' // Inherit the rest of the attributes from the preset dark style
+					  tip: 'topLeft',
+				      name: 'blue' // Inherit the rest of the attributes from the preset dark style
 				   }
 			});
 		}
