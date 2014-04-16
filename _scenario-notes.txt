@@ -17,35 +17,42 @@ Read more at http://www.brainyquote.com/quotes/quotes/j/jbpriest296727.html#Ktum
 J. B. Priestley 
 
 Graphical Design Approach
-Actions:
-1. Effectively present materials for the web
--clearly identify components and sections
--clear introduction
--clear learning objectives
--clear activities
+Layout &amp; Design:
+1. Effectively present materials in D2L and for the web
+-clear presentation and organization of course content.
+-organize the content so the key points are easily found by skimming. 
+-clearly distinguish between what's content, what's an example and what's an activity.
+-visual interest and little surprises can be used to engage the learner with the content.
+-flexible/liquid alyout for the web.
 
-2. Web Accessibility
+-introduction
+-learning objectives
+-activities: course notes
+-on the pages: key points are easily found by skimming
+-engagement through visual interest and little surprises can be used to engage the learner with the content.
+
+2. Ask upfront for information
+-textbook &amp; copyright
+-what tools will be used for assessment - what icons an be used throughout the course to highlight certain activites, key content or due dates.
+-more content would be needed to determine if this approach would work for more modules
+
+3. Web Accessibility
 -ensure that the html mark-up is optimized for accessibility.
 -when changing the design and colors re-check for contrast ratios.
 -ensure all images have appropriate alternative text
 -when adding interactvity, consider fallbacks.
 
--clear presentation and organization of course content.
--organize the content so the key points are easily found by skimming. 
--clearly distinguish between what's content, what's an example and what's an activity.
-
--visual interest and little surprises can be used to engage the learner with the content.
-
 3. Can this approach be used as a template or model for other modules?
--This particular approach is likely general enought to be applied to future modules. However, I really do not have enough to go on to determine if the design choices made here will be appropriate for the rest of the course.
+-This particular approach is likely general enough to be applied to future modules.
+However, I would prefer to have more information and more content to before putting too much effort into customization of layout and images.determine if the design choices made here will be appropriate for the rest of the course.
 -To make more solid design choices and to to be able to identify paterms in the content, I would need more than one module and preferably the syllabus.
 -Without the syllabus it is difficult to determine the how important certain components are or what D2L tools will be used. Being familiar with the syllabus upfront allows me to align my web design choices with istructional design decisions and goals.
   
 
 4. Course Technology
--Proper use of the D2L Content menu - Lon and Short headings
+-Proper use of the D2L Content menu - Long and Short headings
 -Suggestion for an engaging activity - perhaps compose an email to a classmate and assess an email from a different classmate.
--Which D2L tool is best - course mail or discussion forum?
+-Which D2L tool is best chice for this - course mail or discussion forum?
 
 Quality Matters Rubric
 Learning Objectives
