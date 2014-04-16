@@ -12,11 +12,12 @@ Date: December 2013
 .field {
   font-size: 1em;
   color: #231f20;
-  padding: 10px 0 0 0;
+  margin: 0;
+  padding: 1em;
   border-top: 3px #65696e double;
 }
 .field:hover {
-  background-color: #cdd3c2;
+  background-color: #cdc6c4;
 }
 /* ==Global over-rides */
 /* Extra Background colors*/
