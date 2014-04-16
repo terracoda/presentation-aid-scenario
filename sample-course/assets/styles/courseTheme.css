@@ -5,8 +5,15 @@ AID: Taliesin Smith
 Date: December 2013
 */
 /*Fonts */
-/*@import "../fonts/font-awesome/less/font-awesome.less";  */
+/*Main fonts*/
 /* Colors  */
+/*== Global overrides */
+h1 em {
+  font-family: arial, helvetica, "trebuchet ms", verdana, sans-serif;
+  display: block;
+  font-size: 80%;
+  text-indent: 2em;
+}
 /* ==New styles */
 /*Memo-Email Fields*/
 .field {

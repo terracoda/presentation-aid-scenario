@@ -7,7 +7,10 @@ Date: December 2013
 */
 
 /*Fonts */
-/*@import "../fonts/font-awesome/less/font-awesome.less";  */
+
+/*Main fonts*/
+@serif: Garamond, Georgia, 'Times New Roman', serif;
+@sans: arial, helvetica, "trebuchet ms", verdana, sans-serif;
 
 /* Colors  */
 @white: #fff;
@@ -22,6 +25,13 @@ Date: December 2013
 @accent2: #72afb6;  // med blue, column borders //
 @highlight: #ffd500;  // yellow //
 
+/*== Global overrides */
+h1 em {
+	font-family: @sans;
+	display: block;
+	font-size: 80%;
+	text-indent: 2em;
+}
 /* ==New styles */
 /*Memo-Email Fields*/
 .field {
