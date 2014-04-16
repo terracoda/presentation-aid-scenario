@@ -26,6 +26,7 @@ To do
  Need to add new boxes and lists to the guide.
 */
 /*Fonts */
+/*Main fonts*/
 /* Font Awesome icon font */
 /* Colors  */
 body {
@@ -43,7 +44,7 @@ body {
 body {
   font-size: 1em;
   line-height: 1.4;
-  /*font-family: Garamond, Georgia, "Times New Roman", times, serif;*/
+  /*font-family: @serif;*/
 
   font-family: arial, helvetica, "trebuchet ms", verdana, sans-serif;
   color: #231f20;
@@ -116,7 +117,7 @@ h6,
 caption {
   margin: 1em 0 0.5em 0;
   padding: 0;
-  /*font-family: Garamond, Georgia, "Times New Roman", times, serif;*/
+  /*font-family: @serif;*/
 
   font-family: arial, helvetica, "trebuchet ms", verdana, sans-serif;
   color: #231f20;
@@ -126,9 +127,10 @@ caption {
 h1 {
   font-size: 2em;
   color: #2a5f7b;
+  font-weight: normal;
 }
 h2 {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: normal;
 }
 h3 {
@@ -283,9 +285,7 @@ blockquote {
   width: 80%;
 }
 blockquote.boxQuote {
-  border: none;
-  /*1px dashed @accent2;*/
-
+  border: 1px dashed #72afb6;
   background: transparent url(cssImg/boxQuote.png) 0.5em 0.5em no-repeat;
 }
 blockquote.chunkyQuotes {

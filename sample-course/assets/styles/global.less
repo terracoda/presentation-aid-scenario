@@ -28,6 +28,10 @@ To do
 */
     
 /*Fonts */
+/*Main fonts*/
+@serif: Garamond, Georgia, 'Times New Roman', serif;
+@sans: arial, helvetica, "trebuchet ms", verdana, sans-serif;
+
 /* Font Awesome icon font */
 @import "font-awesome.min.css";
 
@@ -58,8 +62,8 @@ html, body {
 body {
 	font-size: 1em;
 	line-height: 1.4;
-	/*font-family: Garamond, Georgia, "Times New Roman", times, serif;*/
-	font-family: arial, helvetica, "trebuchet ms", verdana, sans-serif;
+	/*font-family: @serif;*/
+	font-family: @sans;
 	color: @black;
 }
 #footer	{
@@ -120,8 +124,8 @@ div .backToTop {
 h1, h2, h3, h4, h5, h6, caption {
 	margin: 1em 0 0.5em 0;
 	padding: 0;
-	/*font-family: Garamond, Georgia, "Times New Roman", times, serif;*/
-	font-family: arial, helvetica, "trebuchet ms", verdana, sans-serif;
+	/*font-family: @serif;*/
+	font-family: @sans;
 	color: @black;
 	line-height: 1.2;
 	font-weight: bold;
@@ -129,9 +133,10 @@ h1, h2, h3, h4, h5, h6, caption {
 h1 {
 	font-size: 2em;
 	color: @primary;
+	font-weight: normal;
 }
 h2 {
-	font-size: 1.8em;
+	font-size: 1.6em;
 	font-weight: normal;
 }
 h3 {
@@ -271,7 +276,7 @@ blockquote {
 	width: 80%;
 }
 blockquote.boxQuote {
-	border: none;/*1px dashed @accent2;*/
+	border: 1px dashed @accent2;
 	background: transparent url(cssImg/boxQuote.png) 0.5em 0.5em no-repeat;
 }
 blockquote.chunkyQuotes {
