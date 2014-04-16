@@ -22,7 +22,13 @@ Actions:
 -clear learning objectives
 -clear actions or activities
 
-2.Graphical Design Approach:
+2. Web Accessibility
+-ensure that the html mark-up is optimized for accessibility.
+-when changing the design and colors re-check for contrast ratios.
+-when adding interactvity, consider fallbacks
+-ensure all images have appropriate alternative text
+
+3.Graphical Design Approach:
 -clear presentation and organization of course content.
 -organize the content so the key points are easily found by skimming. 
 -clearly distinguish between what's content, what's an example and what's an activity.
@@ -35,9 +41,10 @@ Actions:
 -Without the syllabus it is difficult to determine the how important certain components are or what D2L tools will be used. Being familiar with the syllabus upfront allows me to align my web design choices with istructional design decisions and goals.
   
 
-Extra
-4. Suggestion for an engaging activity
--Which D2L tool is best?
+4. Course Technology
+-Proper use of the D2L Content menu - Lon and Short headings
+-Suggestion for an engaging activity - perhaps compose an email to a classmate and assess an email from a different classmate.
+-Which D2L tool is best - course mail or discussion forum?
 
 Quality Matters Rubric
 Learning Objectives
